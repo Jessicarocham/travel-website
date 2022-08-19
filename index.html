@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel</title>
+    <style>
+      .first-color {
+        background: #f5f0e8;
+      }
+
+      .second-color {
+        background: #d3bd9a;
+      }
+
+      .fourth-color {
+        background: #674f04;
+      }
+      h1 {
+        text-align: center;
+        color: #674f04;
+      }
+      body {
+        background-color: #d3bd9a;
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        color: #f5f0e8;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        color: #f5f0e8;
+        background: transparent;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: 1px solid;
+        border-radius: 30px;
+        transition: all 200ms ease-in-out;
+        box-shadow: #f5f0e8;
+        cursor: pointer;
+      }
+      button:hover {
+        color: white;
+        background-color: #674f04;
+        cursor: pointer;
+      }
+      a {
+        display: block;
+        text-align: center;
+        color: #674f04;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      img {
+        width: 400px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+
+      .byMe {
+        color: #674f04;
+      }
+    </style>
+    <h1>I am passionate about traveling</h1>
+  </head>
+  <body>
+    <h2>
+      When you travel, not the trip or the vacation itself, but the whole
+      process of planning, exploring, and returning from a trip is important.
+      When you realise how the benefits of travelling can do wonders for you,
+      you definitely will have the motivation to pack your bag and start
+      travelling more.
+    </h2>
+    <hr />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/588/original/FQQXE8GXIAQ1Nx9.jpeg?1654619397"
+      alt=""
+      width="400px"
+    />
+    <hr />
+    <p>
+      <em>
+        <a
+          href="https://www.cabinzero.com/blogs/our-journey/benefits-of-traveling"
+          target="_blank"
+          class="Find out some of the benefits of travel"
+          >Find out some of the benefits of travel
+        </a>
+      </em>
+    </p>
+    <button>Your next destination ✈️</button>
+    <strong><div class="byMe">Coded by Jessica Moreira</div></strong>
+
+    <script>
+      function tellYours() {
+        let tripPlan = prompt("Do you have a next trip planned?");
+        tripPlan = tripPlan.toLowerCase();
+        tripPlan = tripPlan.trim();
+
+        if (tripPlan === "yes") {
+          let destiny = prompt("Where is your next trip?");
+          alert("Have a safe trip to " + destiny);
+        } else {
+          alert("Go to plan your next trip!");
+        }
+      }
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", tellYours);
+    </script>
+  </body>
+</html>
